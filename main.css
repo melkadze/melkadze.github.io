@@ -1,0 +1,82 @@
+:root{
+    --color-bg: whitesmoke;
+    --color-c: #64DAE1;
+    --color-y: #FFD05C;
+    --color-m: #FE5DCD;
+    --color-cc: #6F81DE;
+    --color-yy: #FFE299;
+    --color-mm: #EE61C3;
+    --color-ccc: #6BC3C9;
+    --color-mmm: #8F7B89;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+}
+
+.header{
+    width: 80vw;
+    padding: 10vh;
+    padding-bottom: 6vh;
+    padding-top: 7vh;
+}
+
+.headerStroke {
+    width: 50vw;
+    height: 1vh;
+    background-color: var(--color-y);
+}
+
+.headerText{
+    font-size: 10vh;
+    margin: 0;
+    color: var(--color-c);
+}
+
+.headerSubtext{
+    color: var(--color-m);
+    font-size: 4vh;
+    margin: 0;
+    margin-top: 1vh;
+}
+
+.secondaryHeader {
+    padding-top: 0;
+}
+
+.secondaryHeaderText {
+    font-size: 7vh;
+    margin: 0;
+    color: var(--color-cc);
+}
+
+.secondaryHeaderStroke {
+    width: 30vw;
+    height: 1vh;
+    background-color: var(--color-yy);
+}
+
+.secondaryHeaderSubtext {
+    color: var(--color-mmm);
+    font-size: 3vh;
+}
+
+.secondaryLink{
+    color: var(--color-mm);
+    text-decoration: none;
+}
+
+.secondaryHighlight{
+    color: var(--color-ccc);
+}
+
+.headerListItem{
+    color: var(--color-mmm);
+    font-size: 3vh;
+}
