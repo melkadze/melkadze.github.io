@@ -1,3 +1,15 @@
+@keyframes fade-in {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 :root{
     --color-bg: whitesmoke;
     --color-c: #64DAE1;
@@ -81,12 +93,24 @@ body{
     font-size: 3vh;
 }
 
+.imageFlex{
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+
+.imageFlexItem{
+    margin: 2rem;
+    box-shadow: 1rem 1rem;
+}
+
+
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
     .headerStroke{
-        width: 80%
+        width: 80%;
     }
     
     .secondaryHeaderStroke{
-        width: 70%
+        width: 70%;
     }
 }
