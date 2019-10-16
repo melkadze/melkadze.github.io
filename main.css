@@ -11,15 +11,39 @@
 }
 
 :root{
+    /*  color guide:
+    --color-bg: background color
+    --color-ti-h: title heading color
+    --color-ti-st: title stroke color
+    --color-ti-sh: title subheading color
+    --color-se-h: section heading color
+    --color-se-s: section stroke color
+    --color-se-l: section link color
+    --color-se-hi: section highlight color
+    --color-se-p: section paragraph color
+    */
+    
+    /*  classic color theme:
     --color-bg: whitesmoke;
-    --color-c: #64DAE1;
-    --color-y: #FFD05C;
-    --color-m: #FE5DCD;
-    --color-cc: #6F81DE;
-    --color-yy: #FFE299;
-    --color-mm: #EE61C3;
-    --color-ccc: #6BC3C9;
-    --color-mmm: #8F7B89;
+    --color-ti-h: #64DAE1;
+    --color-ti-st: #FFD05C;
+    --color-ti-sh: #FE5DCD;
+    --color-se-h: #6F81DE;
+    --color-se-s: #FFE299;
+    --color-se-l: #EE61C3;
+    --color-se-hi: #6BC3C9;
+    --color-se-p: #8F7B89;
+    */
+    
+    --color-bg: whitesmoke;
+    --color-ti-h: dodgerblue;
+    --color-ti-st: #FFD05C;
+    --color-ti-sh: cornflowerblue;
+    --color-se-h: deepskyblue;
+    --color-se-s: #FFE299;
+    --color-se-l: mediumseagreen;
+    --color-se-hi: lightskyblue;
+    --color-se-p: #8F7B89;
 }
 
 html{
@@ -42,17 +66,17 @@ body{
 .headerStroke {
     width: 50vw;
     height: 1vh;
-    background-color: var(--color-y);
+    background-color: var(--color-ti-st);
 }
 
 .headerText{
     font-size: 10vh;
     margin: 0;
-    color: var(--color-c);
+    color: var(--color-ti-h);
 }
 
 .headerSubtext{
-    color: var(--color-m);
+    color: var(--color-ti-sh);
     font-size: 4vh;
     margin: 0;
     margin-top: 1vh;
@@ -65,31 +89,36 @@ body{
 .secondaryHeaderText {
     font-size: 7vh;
     margin: 0;
-    color: var(--color-cc);
+    color: var(--color-se-h);
 }
 
 .secondaryHeaderStroke {
     width: 30vw;
     height: 1vh;
-    background-color: var(--color-yy);
+    background-color: var(--color-se-s);
 }
 
 .secondaryHeaderSubtext {
-    color: var(--color-mmm);
+    color: var(--color-se-p);
     font-size: 3vh;
 }
 
 .secondaryLink{
-    color: var(--color-mm);
+    color: var(--color-se-l);
     text-decoration: none;
+	transition: .2s;
+}
+
+.secondaryLink:hover{
+    color: lightgreen;
 }
 
 .secondaryHighlight{
-    color: var(--color-ccc);
+    color: var(--color-se-hi);
 }
 
 .headerListItem{
-    color: var(--color-mmm);
+    color: var(--color-se-p);
     font-size: 3vh;
 }
 
@@ -103,6 +132,7 @@ body{
     margin: 2rem;
     box-shadow: 1rem 1rem;
 }
+
 
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
