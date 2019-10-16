@@ -1,15 +1,3 @@
-@keyframes fade-in {
-  from {
-    transform: translateY(-80px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 :root{
     /*  color guide:
     --color-bg: background color
@@ -19,6 +7,7 @@
     --color-se-h: section heading color
     --color-se-s: section stroke color
     --color-se-l: section link color
+    --color-se-l-h: section link hover color
     --color-se-hi: section highlight color
     --color-se-p: section paragraph color
     */
@@ -42,12 +31,16 @@
     --color-se-h: deepskyblue;
     --color-se-s: #FFE299;
     --color-se-l: mediumseagreen;
+    --color-se-l-h: lightgreen;
     --color-se-hi: lightskyblue;
     --color-se-p: #8F7B89;
+
 }
+
 
 html{
     font-size: 62.5%;
+    color: mediumseagreen;
 }
 
 body{
@@ -106,11 +99,11 @@ body{
 .secondaryLink{
     color: var(--color-se-l);
     text-decoration: none;
-	transition: .2s;
+    transition: color 200ms;
 }
 
 .secondaryLink:hover{
-    color: lightgreen;
+    color: var(--color-se-l-h);
 }
 
 .secondaryHighlight{
@@ -132,7 +125,6 @@ body{
     margin: 2rem;
     box-shadow: 1rem 1rem;
 }
-
 
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
