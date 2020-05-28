@@ -117,13 +117,14 @@ body{
 
 .imageFlex{
     display: flex;
-    width: 80vw;
+    max-width: 80vw;
     flex-wrap: wrap;
 }
 
 .imageFlexItem{
     margin: 2rem;
     box-shadow: 1rem 1rem;
+    max-width: 35vw;
 }
 
 
